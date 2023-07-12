@@ -1,0 +1,9 @@
+config {
+  type: "table",
+  description: "Description of the first table.",
+}
+SELECT 1 AS number
+UNION ALL
+SELECT 5 AS number
+UNION ALL 
+SELECT 3 AS number
