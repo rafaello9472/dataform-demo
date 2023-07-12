@@ -1,0 +1,7 @@
+config {
+  type: "table",
+  description: "This table should not be created because of the source assertion failure",
+  dependencies: ["dataform_source_assertions_rowConditions",
+    "dataform_source_assertions_uniqueKey_0"]
+}
+SELECT * FROM ${ref("source")} WHERE fruit = 'apple'
