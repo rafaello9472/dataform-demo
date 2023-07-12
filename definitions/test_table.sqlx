@@ -1,0 +1,8 @@
+config {
+  type: "table",
+  description: "Description of the table.",
+  columns: {
+    number: "Description of the first column"
+  }
+}
+SELECT 1 AS number
