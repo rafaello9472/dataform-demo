@@ -1,0 +1,10 @@
+config {
+  type: "table",
+  name: "questions_and_answers",
+  columns: {
+    answer_count: docs.answer_count,
+    question_count: docs.question_count,
+  }
+}
+
+SELECT answer_count, question_count FROM ${ref("overridden_name")}

@@ -1,0 +1,28 @@
+config {
+  type: "view",
+  name: "overridden_name",
+  columns: {
+    user_id: docs.user_id,
+    age: docs.age,
+    answer_count: docs.answer_count,
+    question_count: docs.question_count
+  }
+}
+
+SELECT
+  "G75FPA94A" AS user_id,
+  18 AS age,
+  15 AS answer_count,
+  24 AS question_count
+UNION ALL
+SELECT
+  "G53PJ2PA2" AS user_id,
+  53 AS age,
+  38 AS answer_count,
+  65 AS question_count
+UNION ALL
+  SELECT
+  "A34KS5FC3" AS user_id,
+  25 AS age,
+  7 AS answer_count,
+  12 AS question_count

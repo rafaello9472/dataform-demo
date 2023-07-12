@@ -1,0 +1,11 @@
+config {
+  type: "table",
+  name: "users",
+  columns: {
+    user_id: docs.user_id,
+    age: docs.age,
+  }
+}
+
+SELECT user_id, age FROM ${ref("overridden_name")}
+
