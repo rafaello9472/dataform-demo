@@ -1,0 +1,10 @@
+config {
+  type: "table",
+  description: "This table calculates AVG from the source view",
+  name: "results"
+}
+SELECT * FROM ${ref("agg_1")} 
+UNION ALL
+SELECT * FROM ${ref("agg_2")} 
+UNION ALL
+SELECT * FROM ${ref("agg_3")} 
