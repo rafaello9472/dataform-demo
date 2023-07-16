@@ -2,4 +2,4 @@ config {
   type: "table",
   description: "This table calculates SUM from the source view",
 }
-SELECT SUM(number) FROM ${ref("source_view")} AS number_sum
+SELECT SUM(number) AS number_sum FROM ${ref("source_view")} 
