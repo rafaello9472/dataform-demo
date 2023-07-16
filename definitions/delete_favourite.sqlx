@@ -3,5 +3,5 @@ config {
     tags: ["favourite"],
     dependencies: ["source"]}
 
-DELETE FROM dataform_1.source WHERE fruit = 'oranges';
-DELETE FROM dataform_1.source WHERE fruit = 'apples';
+DELETE FROM dataform.source WHERE fruit = 'oranges';
+DELETE FROM dataform.source WHERE fruit = 'apples';

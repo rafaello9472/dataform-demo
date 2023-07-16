@@ -4,5 +4,5 @@ config {
     dependencies: ["source"] 
 }
 
-DELETE FROM dataform_1.source WHERE fruit = 'pears';
-DELETE FROM dataform_1.source WHERE fruit = 'bananas';
+DELETE FROM dataform.source WHERE fruit = 'pears';
+DELETE FROM dataform.source WHERE fruit = 'bananas';
